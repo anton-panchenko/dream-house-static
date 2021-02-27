@@ -1,0 +1,120 @@
+/*-----------------------*/
+/*---------MEDIA---------*/
+/*-----------------------*/
+
+@media (max-width: 1220px) {
+  .header_content {
+    display: block;
+  }
+  .header_content__form {
+    display: none;
+  }
+  .header_content__text {
+    text-align: center;
+  }
+  .header_content__company {
+    display: block;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .header_content__btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav_wrapper {
+    max-width: 90%;
+  }
+  .services_wrapper {
+    max-width: 90%;
+  }
+  .why_are_we_wrapper {
+    max-width: 90%;
+  }
+  .how_we_works_wrapper {
+    max-width: 90%;
+  }
+  .team_wrapper {
+    max-width: 90%;
+  }
+  .portfolio_wrapper {
+    max-width: 90%;
+  }
+  .footer_wrapper {
+    max-width: 90%;
+  }
+  .map-popup {
+    max-width: 100%;
+  }
+  .why_are_we_content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .services_content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .footer_content__titles {
+    display: none;
+  }
+}
+
+@media (max-width: 1070px) {
+  .nav_links__textLinks {
+    display: none;
+  }
+  .humburger {
+    display: block;
+  }
+}
+
+@media (max-width: 920px) {
+  .how_we_works_content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .nav_popup {
+    width: 100%;
+  }
+  .services_content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .why_are_we_content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .footer_content {
+    display: block;
+    text-align: center;
+  }
+  .footer_content__linksGroup {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer_copyright {
+    display: block;
+  }
+  .leadForm_popup {
+    width: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav_social {
+    display: none;
+  }
+}

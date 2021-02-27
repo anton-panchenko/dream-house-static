@@ -1,0 +1,88 @@
+/*-------------------------*/
+/*-------PORTFOLIO---------*/
+/*-------------------------*/
+
+.portfolio {
+  padding-top: calc(37.5px + 1.953125vw);
+  padding-bottom: calc(37.5px + 1.953125vw);
+  background-color: #1a1a1a;
+  color: #d7d7d7;
+  &_wrapper {
+    margin: 0 auto;
+    text-align: center;
+    max-width: $contentWidth;
+  }
+  &_title {
+    text-transform: uppercase;
+    // font-size: 36px;
+    font-size: calc(14px + 1.1458333333333333vw);
+    margin-bottom: calc(25px + 1.3020833333333333vw);
+  }
+  &_content {
+    margin-bottom: calc(15px + 0.78125vw);
+    &__carousel {
+      &_item {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &_item {
+        margin: calc(10px + 0.5208333333333334vw);
+        cursor: pointer;
+        path,
+        circle {
+          fill: #d7d7d7;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          path,
+          circle {
+            fill: #f7b047;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  &_form {
+    &__title {
+      //   font-size: 20px;
+      font-size: calc(14px + 0.3125vw);
+      font-weight: 400px;
+      margin-bottom: calc(10px + 0.5208333333333334vw);
+    }
+    input {
+      color: #d7d7d7;
+      border-radius: 5px;
+      background-color: transparent;
+      border: 1px solid #d7d7d7;
+      padding: 7px 14px;
+      //   font-size: 16px;
+      font-size: calc(14px + 0.10416666666666667vw);
+      font-weight: 400;
+    }
+  }
+}
+
+#portfolio_phone {
+  width: 200px;
+  &::placeholder {
+    color: #d7d7d7;
+    //   font-size: 16px;
+    font-size: calc(14px + 0.10416666666666667vw);
+    font-weight: 400;
+  }
+}
+#portfolio_submit {
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #d7d7d7;
+    color: #1a1a1a;
+  }
+}

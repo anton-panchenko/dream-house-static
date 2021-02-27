@@ -1,0 +1,36 @@
+// @mixin font($font_name, $file_name, $weight, $style) {
+//     @font-face {
+//         font-family: $font_name;
+//         font-display: swap;
+//         src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+//         font-weight: #{$weight};
+//         font-style: #{$style};
+//     }
+// }
+
+// @import 'fonts';
+// @import 'fontello';
+
+
+@import "reset";
+
+@import "aos";
+@import "owl.carousel.min";
+@import "magnific-popup";
+
+@import "preloader";
+@import "page";
+
+@import "navigation";
+@import "header";
+@import "services";
+@import "why_are_we";
+@import "how_we_works";
+@import "team";
+@import "portfolio";
+@import "jokes";
+@import "testimonials";
+@import "footer";
+@import "forms";
+
+@import "media";

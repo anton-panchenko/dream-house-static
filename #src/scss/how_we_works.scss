@@ -1,0 +1,83 @@
+/*-------------------------*/
+/*-------HOW WE WORKS------*/
+/*-------------------------*/
+
+.how_we_works {
+  position: relative;
+  background: url(../img/jpg/how_we_work_background.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: calc(37.5px + 1.953125vw);
+  padding-bottom: calc(37.5px + 1.953125vw);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+  }
+  &_wrapper {
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    text-align: center;
+    max-width: $contentWidth;
+  }
+  &_title {
+    text-transform: uppercase;
+    // font-size: 36px;
+    font-size: calc(14px + 1.1458333333333333vw);
+    margin-bottom: calc(25px + 1.3020833333333333vw);
+    color: #ffffff;
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: calc(15px + 0.78125vw);
+    margin-bottom: calc(25px + 1.3020833333333333vw);
+    &__item {
+      &__counter {
+        color: #d7d7d7;
+        // font-size: 48px;
+        font-size: calc(14px + 1.7708333333333333vw);
+        font-weight: 700;
+        margin-bottom: calc(15px + 0.78125vw);
+      }
+      &__title {
+        text-transform: uppercase;
+        // font-size: 18px;
+        font-size: calc(14px + 0.20833333333333334vw);
+        color: #df8b0d;
+        margin-top: 0;
+        margin-bottom: calc(10px + 0.5208333333333334vw);
+      }
+      &__description {
+        // font-size: 16px;
+        font-size: calc(14px + 0.10416666666666667vw);
+        color: #d7d7d7;
+      }
+    }
+  }
+  &_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px calc(10px + 0.5208333333333334vw);
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #df8b0d;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.17, 0.67, 0.33, 2.59);
+    &_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

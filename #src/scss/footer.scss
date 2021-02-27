@@ -1,0 +1,103 @@
+/*-----------------------*/
+/*---------FOOTER--------*/
+/*-----------------------*/
+
+.footer {
+  // position: relative;
+  // background: url(../img/jpg/footer_background.jpg) no-repeat center center;
+  // background-size: cover;
+  background-color: #1a1a1a;
+  padding-top: calc(15px + 0.78125vw);
+  padding-bottom: 10px;
+  color: #d7d7d7;
+  border-top: 1px solid #d7d7d7;
+  // &::after {
+  //     content: '';
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     background: rgba(0,0,0,.9);
+  //     z-index: 2;
+  // }
+  &_wrapper {
+    // position: relative;
+    // z-index: 3;
+    text-align: center;
+    margin: 0 auto;
+    max-width: $contentWidth;
+  }
+  &_title {
+    // font-size: 36px;
+    font-size: calc(14px + 1.1458333333333333vw);
+    font-weight: 400;
+    color: #fb8b00;
+    margin-bottom: calc(18px + 0.9375vw);
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    text-align: left;
+    margin-bottom: calc(20px + 1.0416666666666667vw);
+    font-size: 14px;
+    &__pair {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__linksGroup {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__titles {
+      &_item {
+        margin-bottom: 10px;
+      }
+    }
+    &__info {
+      &_item {
+        margin-bottom: 10px;
+        &:hover {
+          color: #fb8b00;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+    &__socials {
+      &_item {
+        margin-bottom: 10px;
+        &:hover {
+          color: #fb8b00;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+    &__links {
+      &_item {
+        margin-bottom: 10px;
+        &:hover {
+          color: #fb8b00;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+  &_copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fb8b00;
+    font-size: 12px;
+    &__text {
+      margin-right: 10px;
+    }
+    &__link {
+      &:hover {
+        color: #d7d7d7;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}

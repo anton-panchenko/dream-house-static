@@ -1,0 +1,62 @@
+/*-------------------------*/
+/*-------WHY ARE WE--------*/
+/*-------------------------*/
+
+.why_are_we {
+  padding-top: calc(37.5px + 1.953125vw);
+  padding-bottom: calc(37.5px + 1.953125vw);
+  background-color: #df8b0d;
+  &_wrapper {
+    margin: 0 auto;
+    text-align: center;
+    max-width: $contentWidth;
+  }
+  &_title {
+    text-transform: uppercase;
+    // font-size: 36px;
+    font-size: calc(14px + 1.1458333333333333vw);
+    margin-bottom: calc(25.5px + 1.328125vw);
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: calc(10px + 0.5208333333333334vw);
+    margin-bottom: calc(25px + 1.3020833333333333vw);
+    &__item {
+      &_logo {
+        margin-bottom: 10px;
+      }
+      &_title {
+        // font-size: 16px;
+        font-size: calc(14px + 0.10416666666666667vw);
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      &_description {
+        // font-size: 16px;
+        font-size: calc(14px + 0.10416666666666667vw);
+      }
+    }
+  }
+  &_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px calc(10px + 0.5208333333333334vw);
+    font-size: 14px;
+    font-weight: 700;
+    color: #df8b0d;
+    background-color: #000000;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.17, 0.67, 0.33, 2.59);
+    &_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,116 @@
+/*-------------------------*/
+/*-------NAVIGATION--------*/
+/*-------------------------*/
+
+nav {
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  height: 50px;
+  background-color: #f0f0f0;
+  z-index: 5000;
+  transition: all 0.5s ease-in-out;
+  &.active {
+    top: 0;
+  }
+}
+
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: $contentWidth;
+}
+
+.nav {
+  &_logo {
+    width: 40px;
+    margin-right: 15px;
+    height: auto;
+    &__wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  &_phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &:hover {
+      //color: #F7B047;
+      svg {
+        stroke: #f7b047;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &__number {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: #f7b047;
+      }
+    }
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      svg {
+        stroke: #000000;
+      }
+      //&:hover {
+      //    svg {
+      //        stroke: #F7B047;
+      //        transition: all 0.3s ease-in-out;
+      //    }
+      //}
+    }
+  }
+  &_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+      padding: 0 15px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: #f7b047;
+      }
+    }
+  }
+  &_social {
+    margin-top: 5px;
+    &:hover {
+      path,
+      circle {
+        fill: #f7b047;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.humburger {
+  display: none;
+  &_span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    .humburger_span {
+      background-color: #f7b047;
+    }
+  }
+}

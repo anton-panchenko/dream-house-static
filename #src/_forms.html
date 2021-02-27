@@ -1,0 +1,65 @@
+<!-- Map -->
+
+<div id="map-popup" class="map-popup mfp-with-anim mfp-hide">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.724419102029!2d28.66476951572444!3d50.25973107944944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64bdfc76badd%3A0x48a634638ccccb78!2z0JvRjNCy0L7QstGB0LrQsNGPINGD0LsuLCAxMSwg0JbQuNGC0L7QvNC40YAsINCW0LjRgtC-0LzQuNGA0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDEwMDAx!5e0!3m2!1sru!2sua!4v1609714669284!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+<!-- Form Btn -->
+
+<a href="#leadForm" class="leadForm_openBtn btn_scale form-popup-content" data-effect="mfp-zoom-in" id="leadFormBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></svg>
+</a>
+
+<!-- Form -->
+
+<div class="leadForm_popup mfp-with-anim mfp-hide" id="leadForm">
+    <form method="post" class="leadForm_popup__form">
+        <h5 class="leadForm_popup__form_title">
+            Залиште інформацію і ми з Вами обов'язково зв'яжемось!
+        </h5>
+        <label for="leadFormName">
+            Ваше ім'я
+            <span class="leadForm_popup__form_star">*</span><br>
+            <input type="text" class="leadForm_popup__form_name leadForm_input" name="name" id="leadFormName" required>
+        </label>
+        <label for="leadFormPhone">
+            Ваш номер телефону
+            <span class="leadForm_popup__form_star">*</span><br>
+            <input type="text" class="leadForm_popup__form_phone leadForm_input" name="phone" id="leadFormPhone" required>
+        </label>
+        <label for="leadFormMsg">
+            Повідомлення нам
+            <br>
+            <textarea class="leadForm_popup__form_msg leadForm_input" name="msg" id="leadFormMsg"></textarea>
+        </label>
+        <input type="submit" class="leadForm_popup__form_submitBtn" id="leadFormSubmitBtn" value="Замовити дзвінок">
+    </form>
+</div>
+
+<!-- Nav Menu -->
+
+<div class="nav_popup mfp-with-anim mfp-hide" id="navPopup">
+    <div class="nav_popup__content">
+        <div class="nav_popup__content_textLinks">
+            <a href="#blockServices" class="nav_popup__content_textLinks__item">Послуги</a>
+            <a href="#blockWhyAreWe" class="nav_popup__content_textLinks__item">Чому ми</a>
+            <a href="#blockHowWeWorks" class="nav_popup__content_textLinks__item">Як ми працюємо</a>
+            <a href="#blockTeam" class="nav_popup__content_textLinks__item">Команда</a>
+            <a href="#blockPortfolio" class="nav_popup__content_textLinks__item">Наші роботи</a>
+            <!-- <a href="#blockJokes" class="nav_popup__content_textLinks__item">Жарти</a> -->
+        </div>
+        <div class="nav_popup__content_social">
+            <a href="https://www.facebook.com/Fox-build-118683486199189" class="nav_popup__content_social__item" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592	c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20	c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/fox_zt_/?hl=ru" class="nav_popup__content_social__item" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z"/>
+                    <circle cx="11.994" cy="11.979" r="3.003"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>

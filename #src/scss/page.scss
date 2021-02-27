@@ -1,0 +1,20 @@
+/*-------------------------*/
+/*-----------PAGE----------*/
+/*-------------------------*/
+
+$contentWidth: 80%;
+
+.page {
+  visibility: hidden;
+  // font-family: 'Raleway', sans-serif;
+  // font-family: 'PT Sans', sans-serif;
+  //font-family: 'PT Serif', serif;
+  font-family: 'Source Serif Pro', serif;
+  &.visible {
+    visibility: visible;
+  }
+}
+
+.active_btn {
+  transform: scale(1.05);
+}
