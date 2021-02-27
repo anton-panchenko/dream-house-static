@@ -2491,7 +2491,7 @@ nav.active {
 }
 
 .team_content__carousel_item__avatar img {
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .team_content__carousel_item__name {
@@ -2513,7 +2513,7 @@ nav.active {
 }
 
 .team_content__carousel_item__social {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .team_content__carousel_item__social:hover path,

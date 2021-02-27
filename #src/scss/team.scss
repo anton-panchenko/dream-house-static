@@ -25,7 +25,7 @@
           width: 200px;
           margin: 0 auto;
           img {
-            border-radius: 50%;
+            border-radius: 10px;
           }
         }
         &__name {
@@ -46,7 +46,7 @@
           margin-bottom: 10px;
         }
         &__social {
-          margin-top: 5px;
+          margin-top: 15px;
           &:hover {
             path,
             circle {
