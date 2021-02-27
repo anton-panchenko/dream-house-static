@@ -5,7 +5,7 @@
 .why_are_we {
   padding-top: calc(37.5px + 1.953125vw);
   padding-bottom: calc(37.5px + 1.953125vw);
-  background-color: #df8b0d;
+  background-color: $yellow;
   &_wrapper {
     margin: 0 auto;
     text-align: center;
@@ -46,7 +46,7 @@
     padding: 10px calc(10px + 0.5208333333333334vw);
     font-size: 14px;
     font-weight: 700;
-    color: #df8b0d;
+    color: $yellow;
     background-color: #000000;
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.17, 0.67, 0.33, 2.59);

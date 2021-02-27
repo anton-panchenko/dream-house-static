@@ -49,7 +49,7 @@
         text-transform: uppercase;
         // font-size: 18px;
         font-size: calc(14px + 0.20833333333333334vw);
-        color: #df8b0d;
+        color: $yellow;
         margin-top: 0;
         margin-bottom: calc(10px + 0.5208333333333334vw);
       }
@@ -68,7 +68,7 @@
     font-size: 14px;
     font-weight: 700;
     color: #000000;
-    background-color: #df8b0d;
+    background-color: $yellow;
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.17, 0.67, 0.33, 2.59);
     &_wrapper {

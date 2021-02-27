@@ -39,6 +39,7 @@ let imagemin = require('gulp-imagemin');
 let ttf2woff = require('gulp-ttf2woff');
 let ttf2woff2 = require('gulp-ttf2woff2');
 let fonter = require('gulp-fonter');
+let htmlmin = require('gulp-htmlmin');
 
 function browserSync() {
     browsersync.init({
@@ -53,6 +54,7 @@ function browserSync() {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }

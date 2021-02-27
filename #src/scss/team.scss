@@ -37,12 +37,23 @@
         &__position {
           margin-bottom: 10px;
           font-size: 14px;
-          color: #df8b0d;
+          // color: $yellow;
+          color: #282c34;
         }
         &__description {
           font-size: 14px;
           color: #282c34;
           margin-bottom: 10px;
+        }
+        &__social {
+          margin-top: 5px;
+          &:hover {
+            path,
+            circle {
+              fill: $yellow;
+              transition: all 0.3s ease-in-out;
+            }
+          }
         }
       }
     }
@@ -61,7 +72,7 @@
         &:hover {
           path,
           circle {
-            fill: #f7b047;
+            fill: $yellow;
             transition: all 0.3s ease-in-out;
           }
         }

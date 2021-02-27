@@ -5,13 +5,15 @@
     align-items: center;
     position: fixed;
     z-index: 200;
-    width: calc(25px + 1.3020833333333333vw);
-    height: calc(25px + 1.3020833333333333vw);
+    width: 50px;
+    height: 50px;
+    // width: calc(25px + 1.3020833333333333vw);
+    // height: calc(25px + 1.3020833333333333vw);
     right: 10px;
     bottom: 10px;
-    background-color: #1a1a1a;
-    //background-color: inherit;
-    border: 1px solid #d7d7d7;
+    // background-color: #1a1a1a;
+    background-color: inherit;
+    border: 1px solid $yellow;
     border-radius: 50%;
     transition: all 0.5s cubic-bezier(0.17, 0.67, 0.33, 2.59);
     &:hover {
@@ -45,7 +47,7 @@
       &_title {
         // font-size: 20px;
         font-size: calc(14px + 0.3125vw);
-        color: #fb8b00;
+        color: $yellow;
         font-weight: 400;
         text-align: center;
         margin-block-start: 0;
@@ -68,7 +70,7 @@
         margin-top: 10px;
         border: 0;
         border-radius: 5px;
-        background-color: #fb8b00;
+        background-color: $yellow;
         transition: all 0.5s cubic-bezier(0.17, 0.67, 0.33, 2.59);
         cursor: pointer;
         &:hover {
@@ -125,7 +127,7 @@
         margin: 10px;
         transition: all 0.3s ease-in-out;
         &:hover {
-          color: #f7b047;
+          color: $yellow;
         }
       }
     }
@@ -138,7 +140,7 @@
         &:hover {
           path,
           circle {
-            fill: #f7b047;
+            fill: $yellow;
             transition: all 0.3s ease-in-out;
           }
         }

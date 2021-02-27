@@ -34,7 +34,7 @@
   right: -5px;
   width: 2px;
   /* Change colour of Cursor Here */
-  background-color: #fb8b00;
+  background-color: $yellow;
   z-index: 1;
   animation: flash 0.5s none infinite alternate;
 }
@@ -58,7 +58,7 @@
 .headline {
   font-family: "Georgia", serif;
   //margin: 20px;
-  color: #fb8b00;
+  color: $yellow;
   // font-size: 40px;
   font-size: calc(14px + 1.3541666666666667vw);
   text-align: center;

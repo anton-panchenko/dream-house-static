@@ -3,13 +3,12 @@
 /*-------------------------*/
 
 $contentWidth: 80%;
+$yellow: #fde931;
+// $yellow: #ffe706;
 
 .page {
   visibility: hidden;
-  // font-family: 'Raleway', sans-serif;
-  // font-family: 'PT Sans', sans-serif;
-  //font-family: 'PT Serif', serif;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   &.visible {
     visibility: visible;
   }

@@ -41,7 +41,7 @@
         &:hover {
           path,
           circle {
-            fill: #f7b047;
+            fill: $yellow;
             transition: all 0.3s ease-in-out;
           }
         }
@@ -75,6 +75,7 @@
     //   font-size: 16px;
     font-size: calc(14px + 0.10416666666666667vw);
     font-weight: 400;
+    text-align: center;
   }
 }
 #portfolio_submit {

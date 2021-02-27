@@ -221,22 +221,23 @@ $('.nav_popup__content_textLinks__item').on('click', () => {
 
 /*---------------------Auto click-------------------------*/
 
-// let isTheFormCalled = false;
-// let formCallBtns = document.querySelectorAll('.btn_scale');
-// formCallBtns.forEach(btn => {
-//     btn.addEventListener('click', () => {
-//         isTheFormCalled = true;
-//     });
-// });
-//
-// let autoClick = new Event('click');
-// let leadFormBtn = document.querySelector('#leadFormBtn');
-//
-// setTimeout(() => {
-//     if (!isTheFormCalled) {
-//         leadFormBtn.dispatchEvent(autoClick);
-//     }
-// }, 30000);
+let isTheFormCalled = false;
+
+let formCallBtns = document.querySelectorAll('.btn_scale');
+formCallBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        isTheFormCalled = true;
+    });
+});
+
+let autoClick = new Event('click');
+let leadFormBtn = document.querySelector('#leadFormBtn');
+
+setTimeout(() => {
+    if (!isTheFormCalled) {
+        leadFormBtn.dispatchEvent(autoClick);
+    }
+}, 30000);
 
 /*---------------------Forms-------------------------*/
 

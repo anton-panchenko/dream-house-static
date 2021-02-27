@@ -25,7 +25,7 @@ nav {
 
 .nav {
   &_logo {
-    width: 40px;
+    width: 120px;
     margin-right: 15px;
     height: auto;
     &__wrapper {
@@ -38,21 +38,23 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
     &:hover {
       //color: #F7B047;
+      color: $yellow;
       svg {
-        stroke: #f7b047;
+        stroke: $yellow;
         transition: all 0.3s ease-in-out;
       }
     }
     &__number {
       font-size: 14px;
       font-weight: 600;
-      color: #000000;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        color: #f7b047;
-      }
+      // transition: all 0.3s ease-in-out;
+      // &:hover {
+      //   color: $yellow;
+      // }
     }
     &__icon {
       display: flex;
@@ -81,7 +83,7 @@ nav {
       padding: 0 15px;
       transition: all 0.3s ease-in-out;
       &:hover {
-        color: #f7b047;
+        color: $yellow;
       }
     }
   }
@@ -90,7 +92,7 @@ nav {
     &:hover {
       path,
       circle {
-        fill: #f7b047;
+        fill: $yellow;
         transition: all 0.3s ease-in-out;
       }
     }
@@ -110,7 +112,7 @@ nav {
   }
   &:hover {
     .humburger_span {
-      background-color: #f7b047;
+      background-color: $yellow;
     }
   }
 }
