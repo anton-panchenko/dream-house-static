@@ -2,6 +2,12 @@
 /*---------MEDIA---------*/
 /*-----------------------*/
 
+@media (max-width: 1320px) {
+  .nav_wrapper {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 1220px) {
   .header_content {
     display: block;
@@ -26,9 +32,6 @@
 }
 
 @media (max-width: 1200px) {
-  .nav_wrapper {
-    max-width: 90%;
-  }
   .services_wrapper {
     max-width: 90%;
   }
@@ -56,6 +59,15 @@
   }
 }
 
+@media (max-width: 1180px) {
+  .nav_links__textLinks {
+    display: none;
+  }
+  .humburger {
+    display: block;
+  }
+}
+
 @media (max-width: 1000px) {
   .services_content {
     grid-template-columns: repeat(2, 1fr);
@@ -66,19 +78,22 @@
   }
 }
 
-@media (max-width: 1070px) {
-  .nav_links__textLinks {
-    display: none;
-  }
-  .humburger {
-    display: block;
-  }
-}
-
 @media (max-width: 920px) {
   .how_we_works_content {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .manager_content {
+    display: block;
+  }
+  .manager_content__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
   }
 }
 

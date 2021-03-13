@@ -1,0 +1,87 @@
+/*-------------------------*/
+/*---------MANAGER---------*/
+/*-------------------------*/
+
+.manager {
+  position: relative;
+  // background: url(../img/jpg/manager_back_3.jpg) no-repeat center center;
+  // background-size: cover;
+  background-color: #d6d6d6;
+  padding-top: calc(37.5px + 1.953125vw);
+  padding-bottom: calc(37.5px + 1.953125vw);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+  }
+  &_wrapper {
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    text-align: center;
+    max-width: $contentWidth;
+  }
+  &_title {
+    text-transform: uppercase;
+    // font-size: 36px;
+    font-size: calc(14px + 1.1458333333333333vw);
+    margin-bottom: calc(25px + 1.3020833333333333vw);
+    color: $blackText;
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+    margin-bottom: calc(25px + 1.3020833333333333vw);
+    &__photo {
+      img {
+        border-radius: 10px;
+      }
+    }
+    &__description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $blackText;
+      text-align: center;
+      &_title {
+        // font-size: 20px;
+        font-size: calc(14px + 0.4166666666666667vw);
+        margin-bottom: calc(15px + 1.0416666666666667vw);
+      }
+      &_text {
+        // font-size: 16px;
+        font-size: calc(14px + 0.1388888888888889vw);
+        text-align: left;
+        margin-bottom: calc(10px + 0.6944444444444444vw);
+      }
+    }
+    &__item {
+      &__counter {
+        color: #d7d7d7;
+        // font-size: 48px;
+        font-size: calc(14px + 1.7708333333333333vw);
+        font-weight: 700;
+        margin-bottom: calc(15px + 0.78125vw);
+      }
+      &__title {
+        text-transform: uppercase;
+        // font-size: 18px;
+        font-size: calc(14px + 0.20833333333333334vw);
+        color: $yellow;
+        margin-top: 0;
+        margin-bottom: calc(10px + 0.5208333333333334vw);
+      }
+      &__description {
+        // font-size: 16px;
+        font-size: calc(14px + 0.10416666666666667vw);
+        color: #d7d7d7;
+      }
+    }
+  }
+}
